@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Method Splice 
+        // splice(indexAwal, mauDihapusBerapa, elemenBaru1, elemenBaru2, dst...)
+        var arr = [
+            'Sandhika Galih', 'Kang Onno W. Purbo', 'Andre Haxor'
+        ];
+        arr.splice(2, 2, 'Aditya Hacker!', 'Mamang Garox', 'Hacker Berkelas!');
+        console.log(arr.join(' - '));
+
+        // 2. Method Slice
+        // slice(indexAwal, indexAkhir : 
+        //tapi harus loncat satu, karena 
+        //index array terakhir yang akan diiris tidak akan terbawa!)
+        var arr2 = arr.slice(0, 2);
+        console.log(arr2.join(' - '));
+    </script>
+</body>
+</html>

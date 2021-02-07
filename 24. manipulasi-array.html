@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Manipulasi Array
+        var arr = ["Sandhika", "Aditya"];
+        // 1. Method length
+        for(var a = 0; a < arr.length; a++){
+            console.log('Mahasiswa Ke - ' + ( a + 1) + ' : ' + arr[a]);
+        }
+        // 2. Method Join -> menggabungkan
+        console.log(arr.join(' | '));
+        // 3. Method Push -> Menambahkan elemen baru di belakang array
+        console.log(arr.push('Abang Jago Hacker'));
+        // Tampilkan
+        console.log(arr.join(' | '));
+        // 4. Method Pop -> kebalikan dari push, menghapus elemen pertama di belakang array
+        console.log(arr.pop());
+        // Tampilkan
+        console.log(arr.join(' | '));
+        // 5. Method UnShift -> Menambahkan elemen baru di depan array
+        console.log(arr.unshift('Assalamualaikum'));
+        // Tampilkan
+        console.log(arr.join(' | '));
+        // 6. Method Shift -> Menghapus elemen pertama di depan array
+        console.log(arr.shift());
+        // Tampilkan
+        console.log(arr.join(' | '));
+    </script>
+</body>
+</html>

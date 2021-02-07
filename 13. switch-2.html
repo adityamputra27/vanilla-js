@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var item = prompt('Masukkan Nama Makanan : \nContoh : nasi, daging, susu, hamburger, softdrink');
+
+        // Kurang Efektif
+        // switch (item) {
+        //     case 'nasi' :
+        //         alert('Makanan & Minuman SEHAT!');
+        //     break;
+
+        //     case 'daging' :
+        //     alert('Makanan & Minuman SEHAT!');
+        //     break;
+
+        //     case 'susu' :
+        //     alert('Makanan & Minuman SEHAT!');
+        //     break;
+
+        //     case 'hamburger' :
+        //     alert('Makanan & Minuman TIDAK SEHAT!');
+        //     break;
+
+        //     case 'softdrink' :
+        //     alert('Makanan & Minuman SEHAT!');
+        //     break;
+
+        //     default :
+        //     alert('Anda Salah Memasukkan Makanan / Minuman!');
+        //     break;
+        // }
+        // Cara efektif
+        switch (item) {
+            case 'nasi' :
+            case 'daging' :
+            case 'susu' :
+            alert('Makanan & Minuman SEHAT!');
+            break;
+
+            case 'hamburger' :
+            case 'softdrink' :
+            alert('Makanan & Minuman SEHAT!');
+            break;
+
+            default :
+            alert('Anda Salah Memasukkan Makanan / Minuman!');
+            break;
+        }
+
+    </script>
+</body>
+</html>

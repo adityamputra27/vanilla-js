@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Foreach
+        // var myArr = [
+        //     'Apple', 'Mango', 'Banana', 'Avokado'
+        // ];
+
+        // var result = function()
+        // myArr.forEach(function(value, index){
+        //     console.log('Buah - Buahan Ke - ' + (index + 1) + ' Adalah : ' + value);
+        // });
+        // 2. Map
+        // var yourArr = [
+        //     'Pak Manto', 'Kang Latif', 'Kang Fahri', 'Kang Iki'
+        // ];
+
+        // var result = yourArr.map(function(value, index){
+        //     return value;
+        // });
+
+        // console.log(result.join(' - '));
+        
+        // 3. Sort
+        var arrAgain = [
+            100, 9829, 2121, 98, 21, 189, 1143, 111, 345
+        ];
+        var result = arrAgain.sort(function(a, b){
+            return a - b;
+            // return b - a;
+        });
+        console.log(result.join(' - '));
+        // console.log(arrAgain.join(' - '));
+    </script>
+</body>
+</html>

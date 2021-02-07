@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Deklarasi variable global scope / window scope
+        var a = 1;
+
+        function test(a){
+            // Deklarasi variable local
+            console.log(a);
+        }
+        test(a);
+        test(10);
+        console.log(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object
+        // Contoh pembuatan object
+        // 1. Object Literal
+        var obj = {};
+        obj.halo = function(){
+            console.log('Halo!');
+        };
+        obj.halo();
+        // var mhs = {
+        //     nama : "Aditya Muhamad Putra",
+        //     umur : 18,
+        //     ips : [3.80, 3.90, 4.00],
+        //     alamat : {
+        //         jalan : "Jalan Raya Siliwangi, Komplek SMP Negeri 2 Cianjur",
+        //         kota : "Cianjur",
+        //         provinsi : "Jawa Barat",
+        //         kodepos : 43212
+        //     }
+        // };
+
+        // 2. Function declarassion
+        function mhsObj(nama, umur, email){
+            var bio = {};
+
+            bio.nama = nama;
+            bio.umur = umur;
+            bio.email = email;
+
+            return bio;
+        }
+
+        var showObj = mhsObj('Aditya Muhamad Putra', 18, 'adityamuhamadputra@gmail.com');
+
+        // 3. Constructor function, menggunakan keyword new
+        function ConsObj(nama, umur, email){
+
+            // dianggap sudah ada, var this = {};
+            this.nama = nama;
+            this.umur = umur;
+            this.email = email;
+
+            // dianggap sudah ada, return this;
+        }
+        var objShow = new ConsObj('Ujang Markujang', 18, 'ujang@itb.ac.id');
+
+    </script>
+</body>
+</html>

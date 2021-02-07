@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME SEDERHANA SUIT JAWA</title>
+</head>
+<body>
+    <script>
+        // Tampilkan Jika Ingin Main Lagi
+        var question = true;
+        while(question){
+            // Menangkap pilihan player
+            alert('Selamat Datang Di GAME SUIT JAWA!');
+            var player = prompt('Silahkan Pilih Antara Berikut : gajah, orang, semut');
+            // Menangkap pilihan computer
+            // Membangkitkan / memanggil bilangan random
+            var computer = Math.random();
+            if(computer < 0.34){
+                computer = 'gajah';
+            } else if(computer >= 0.34 && computer < 0.67){
+                computer = 'orang';
+            } else {
+                computer = 'semut';
+            }
+            // Menentukan rules
+            var result = '';
+            if(player == computer){
+                result = 'SERI!';
+            } else if(player == 'gajah'){
+                // if(computer == )
+                result = (computer == 'orang') ? 'MENANG!' : 'KALAH!';
+            } else if(player == 'orang'){
+                result = (computer == 'gajah') ? 'KALAH!' : 'MENANG!';
+            } else if(player == 'semut'){
+                // if
+                result = (computer == 'orang') ? 'KALAH!' : 'MENANG!';
+            } else {
+                result = 'Anda Memasukkan Pilihan Yang Salah!';
+            }
+            // Menampilkan hasinya
+            alert('Kamu Memilih : ' + player + '\nKomputer Memilih : ' + computer + '\nHasilnya Adalah Kamu : ' + result);
+            question = confirm('Apakah Kamu Ingin Bermain Kembali?');
+        }
+        alert('Terima Kasih Sudah Bermain!');
+    </script>
+</body>
+</html>

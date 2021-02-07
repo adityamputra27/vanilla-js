@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Latihan Object
+        // Membuat Pengelolaan Angkot
+        // Membuat Object Angkot
+        function Angkot(sopir, trayek, penumpang, kas){
+
+            this.sopir = sopir;
+            this.trayek = trayek;
+            this.penumpang = penumpang;
+            this.kas = kas;
+
+            this.penumpangNaik = function(namaPenumpang){
+
+                this.penumpang.push(namaPenumpang);
+                return this.penumpang;
+            }
+
+            this.penumpangTurun = function(namaPenumpang, bayar){
+                
+                if(this.penumpang.length == 0){
+                    console.log('Angkot Masih Kosong! Belum Bisa Menurunkan Penumpang!');
+                }
+                for(var index = 0; index < this.penumpang.length; index++){
+                    this.penumpang[index] = undefined;
+                    this.kas += bayar
+                }
+            }
+        }
+
+        var angkot1 = new Angkot('Onno W. Purbo', ['Cicaheum', 'Cibiru'], [], 0);
+        var angkot2 = new Angkot('Ujang Markujang', ['Warungkondang', 'Jambudipa'], [], 0);
+    </script>
+</body>
+</html>

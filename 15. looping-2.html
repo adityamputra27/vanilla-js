@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var s = '';
+        // for(var i = 0; i < 5; i++){
+        //     s += '*';
+        // }
+        // console.log(s);
+        // for(var i = 0; i < 10; i++){
+        //     s += '*';
+        //     s += '\n';
+        // }
+        // console.log(s);
+        // for(var i = 0; i < 10; i++){
+            
+        //     for(var j = 0; j < 5; j++){
+        //         s += '*';
+        //     }
+
+        //     s += '\n';
+        // }
+        // console.log(s);
+        // for(var i = 0; i < 7; i++){
+            
+        //     for(var j = 0; j < 10; j++){
+        //         s += '*';
+        //     }
+
+        //     s += '\n';
+        // }
+        // console.log(s);
+
+        // 1. PERULANGAN SEGITIGA SIKU - SIKU
+
+        var s = '';
+        for (var i = 0; i < 15; i++){
+            for(var j = 0; j <= i; j++){
+                s += '*';
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+        // 2. PERULANGAN SEGITIGA TERBALIK I
+
+        var s = '';
+        for(var i = 15; i > 0; i--){
+            for(var j = 0; j < i; j++){
+                s += '*';
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+        // 3. PERULANGAN SEGITIGA TERBALIK II
+
+        var s = '';
+
+        for(var i = 0; i < 15; i++){
+            for (var j = 0; j < i; j++){
+                s += ' ';
+            }
+            for (var k = 15; k > i; k--){
+                s += '*';
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+
+        // 4. PERULANGAN SEGITIGA GUNUNG
+
+        var s = ''; 
+        for (var i = 0; i < 15; i++) {
+            for ( var k = 0; k <= i; k++) {
+                s += '*';
+            }
+            s += '\n' ;
+        }
+        for (var i = 15; i >= 0; i--) {
+            for (var j = 0; j<i; j++) {
+                s += '*'
+            }
+                s += '\n' ;
+        }
+        console.log(s);
+
+        // 5. PERULANGAN SEGITIGA SAMA KAKI / PIRAMIDA
+
+        var s = '';
+        for(var i = 1; i <= 15; i++){
+            for(var j = i; j < 15; j++){
+                s += ' ';
+            }
+            for(var k = 1; k < (i * 2); k++){
+                s += '*';
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+        // 6. PERULANGAN SEGITIGA DOUBLE / BELAH KETUPAT
+
+        var s = '';
+        for(var i = 1; i <= 15; i++){
+            for(var j = 1; j <= 15-i; j++){
+                s += ' ';
+            }
+            for(var k = 1; k <= i * 2 - 1; k++){
+                s += '*';
+            }
+            s += '\n';
+        } 
+        for(var l = 15 - 1; l > 0; l--){
+            for(m = 1; m <= 15 - l; m++){
+                s += ' ';
+            }
+            for(n = 1; n <= l * 2 - 1; n++){
+                s += '*';
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+        // 7. PERULANGAN SEGITIGA SAMA KAKI (ANGKA)
+
+        var s = '';
+        var angka = 1;
+        for(i = 0; i < 5; i++){
+            for(j = 5; j > i; j--){
+                s += ' ';
+            }
+            angka = 1;
+            for(k = 0; k <= i; k++){
+                s += angka + ' ';
+                angka = angka * (i - k) / (k + 1);
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+        // 8. PERULANGAN TANDA PAGAR + SPASI
+
+        var s = '';
+        for(var a = 0; a < 10; a++){
+            for(var b = 0; b < 4; b++){
+                if(a % 2 == 0){
+                    s += '# ';
+                } else {
+                    s += ' #';
+                }
+            }
+            s += '\n';
+        }
+        console.log(s);
+
+    </script>
+</body>
+</html>

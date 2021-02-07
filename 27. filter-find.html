@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Filter, mencari nilai array dan menghasilkan nilai array
+        
+        var arr = [1, 8, 5, 2, 4, 9, 11];
+
+        // Make regular expression
+        var result = arr.filter(function(value){
+            return value > 5;
+        });
+
+        console.log(result.join(' - '));
+
+        // 2. Find, mencari hanya 1 nilai array dan tidak menghasilkan nilai array
+
+        var myArr = [1, 2, 10, 8, 11, 13, 5, 3];
+
+        var result = arr.find(function(value){
+            return value > 5;
+        }); 
+
+        console.log(result);
+    </script>
+</body>
+</html>

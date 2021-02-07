@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="cycle();">TEST COBA</button>
+    <!-- <h1 id="result">LOOPING</h1> -->
+    <script>
+        // var lagi = true;
+        // while (lagi) {
+        //     console.log('Helloe WOrld!');
+        //     lagi = confirm('Lagi?');
+        // }
+        // var nilaiAwal = 1;
+        // while(nilaiAwal <= 5){
+        //     console.log('Hello World!');
+        //     nilaiAwal++;
+        // }
+        var jmlAngkot = 10;
+        var angkot = 1;
+        while(angkot <= jmlAngkot){
+            console.log('Angkot No. ' + angkot + ' Beroperasi Dengan Baik');
+            angkot++;
+        }
+        // var jmlAngkot = 10;
+        // var angkotBeroperasi = 6;
+        // var noAngkot = 1;
+        // while(noAngkot <= angkotBeroperasi){
+        //     console.log('Angkot No. ' + noAngkot + ' Beroperasi Dengan Baik!');
+        //     noAngkot++;
+        // }
+        // var list = [1,2,3,4];
+
+        //     for (var x = 0, ln = list.length; x < ln; x++) {
+        //     setTimeout(function(y) {    
+        //         console.log("%d => %d", y, list[y] += 10);
+        //     }, x * 500, x); // we're passing x
+        // }
+        // var first = "a", last = "c";
+        // for(var i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
+        //     console.log( eval("String.fromCharCode(" + i + ")") + " " );
+        // }
+        // function loopNama(){
+        //     const displayLetters = (first, last) => {
+        //         let str = '';
+        //         for (let i = first.charCodeAt(0); i <= last.charCodeAt(0); i++) {
+        //             str += String.fromCharCode(i) + ' ';
+        //         }
+        //         // console.log(str + '\n');
+        //         document.getElementById('result').innerHTML = str;
+        //     };
+        //     const repeatDisplay = (firstLetter, lastLetter, numTimes, delay) => {
+        //         for (let count = 1; count <= numTimes; count++) {
+        //             setTimeout(() => displayLetters(firstLetter, lastLetter), delay * count);
+        //         }
+        //     };
+
+        //     repeatDisplay('a', 'c', 60, 250);
+        //     }
+        function cycle(index) {
+            setTimeout(function() {
+                document.getElementById(location[index]).style.background = color[index];
+
+                index++; // Increment the index
+
+                if (index >= 3) {
+                    index = 0; // Set it back to `0` when it reaches `3`
+                }
+
+                cycle(index); // recursively call `cycle()`
+
+                //cycle(++index % 3);
+            }, 1000);
+        }
+
+        cycle(0);
+
+    </script>
+</body>
+</html>

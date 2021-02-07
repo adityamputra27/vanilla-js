@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Rekursif, sebuah bagian dari javascript yang digunakan untuk memanggil fungsinya sendiri
+        // Hampir seperti / mirip looping
+        // function test(a){
+
+        //     // Harus menggunakan base case untuk memberhentikan rekursifnya
+        //     if(a === 0) return;
+        //     console.log(a);
+        //     return test(a - 1);
+        // }
+        // test(10);
+        // Hampir sama dengan looping seperti ini
+        // for(var a = 10; a > 0; a--){
+        //     console.log(a);
+        // }
+        // Membuat program faktorial matematika menggunakan rekursif
+        function faktorial(n){
+            if(n === 0) return 1; // Jika n === 0 maka kembalikan nilai ke angka 1
+            return n * faktorial(n - 1);
+        }
+        console.log(faktorial(5)); //Output 120
+        // Prosesnya
+        // 5 * faktorial(4)
+        // 5 * (4 * faktorial(3))
+        // 5 * (4 * (3 * faktorial(2)))
+        // 5 * (4 * (3 * (2 *(faktorial(1))))
+        // 5 * (4 * (3 * (2 * 1)))
+        // 5 * (4 * (3 * 2))
+        // 5 * (4 * 6)
+        // 5 * 24
+        // 120
+        // Membuat program faktorial matematika menggunakan looping (for)
+        // Ini versi loopingnya
+        function faktorialLoop(n){
+            var hasil = 1;
+            for(var i = n; i > 0; i--){
+                hasil *= i;
+            }
+            return hasil;
+        }
+        console.log(faktorialLoop(5)); //Output 120
+    </script>
+</body>
+</html>
